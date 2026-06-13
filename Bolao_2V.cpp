@@ -94,8 +94,7 @@ int main() {
         cout << timesA[i] << " " << golsReaisA[i] << " x " << golsReaisB[i] << " " << timesB[i] << endl;
     }
 
-    // 5. RANKING DO BOLÃO (Mantendo sua árvore de decisão original)
-    cout << "\n=== RANKING DO BOLÃO ===" << endl;
+    // 5. RANKING DO BOLÃO
 
     if (pontosLeonam >= pontosLucas && pontosLucas >= pontosMaria) {
         cout << "1º Lugar: Leonam -> " << pontosLeonam << "\n2º Lugar: Lucas -> " << pontosLucas << "\n3º Lugar: Maria -> " << pontosMaria << endl;

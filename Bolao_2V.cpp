@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// FUNÇÃO REUTILIZÁVEL: Agora recebe vectors por referência constante (evita cópia desnecessária na memória)
+// FUNÇÃO REUTILIZÁVEL: Agora recebe vectors por referência constante
 int calcular(const vector<int>& rA, const vector<int>& rB, const vector<int>& pA, const vector<int>& pB) {
     int total = 0;
     // O loop se adapta dinamicamente ao tamanho do vetor de jogos
@@ -42,7 +42,7 @@ int obterGolsValidos(string mensagem) {
 }
 
 int main() {
-    // 1. VETORES DINÂMICOS (Substituindo os arrays estáticos por std::vector)
+    // 1. VETORES DINÂMICOS
     vector<string> timesA = {"BRA", "RSA", "FRA", "GER"};
     vector<string> timesB = {"EGT", "MAR", "AGT", "COS"};
     vector<int> golsReaisA = {3, 1, 1, 4};

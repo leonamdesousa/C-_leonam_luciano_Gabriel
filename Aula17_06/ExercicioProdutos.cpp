@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+#include <locale>
 
 // Classe Base
 class Produto {
@@ -47,9 +48,11 @@ public:
 
 
 int main() {
+    
+    setlocale(LC_ALL, "pt_BR.UTF-8");
 
     Livro livro1("O Senhor dos Aneis", 59.90, "alguém");
-    Livro livro2("1984", 39.90, "outro alguém");
+    Livro livro2("Harry Potter", 39.90, "outro alguém");
 
     Eletronico eletronico1("OPPO Reno 13", 4500.00, "Oppo");
     Eletronico eletronico2("Notebook NitroV", 6200.00, "Acer");
